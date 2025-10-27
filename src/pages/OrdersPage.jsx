@@ -1,38 +1,10 @@
-import './header.css'
 import './OrdersPage.css'
+import { Header } from "../components/Header";
 
 export function OrdersPage() {
     return(
         <>
-                <div class="header">
-      <div class="left-section">
-        <a href="/" class="header-link">
-        BuyNowHub
-        </a>
-      </div>
-
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search" />
-
-        <button class="search-button">
-          <img class="search-icon" src="images/icons/search-icon.png" />
-        </button>
-      </div>
-
-      <div class="right-section">
-        <a class="orders-link header-link" href="/orders">
-
-          <span class="orders-text">Orders</span>
-        </a>
-
-        <a class="cart-link header-link" href="/checkout">
-          <img class="cart-icon" src="images/icons/cart-icon.png" />
-          <div class="cart-quantity">3</div>
-          <div class="cart-text">Cart</div>
-        </a>
-      </div>
-    </div>
-
+        <Header/>
     <div class="orders-page">
       <div class="page-title">Your Orders</div>
 
